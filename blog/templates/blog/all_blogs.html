@@ -1,0 +1,30 @@
+
+{% extends "portfolio/base.html" %}
+
+{% load static %}
+{% block ebolus %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'portfolio/blog.css' %}">
+    <title>CompSciHub</title>
+  </head>
+  <body>
+      <h1 id="blogtitle" class="font-weight-bold text-center">CompSciHub</h1>
+      <h3 class="text-center mb-3 p1">Technology blog, delving into topics including FinTech, Machine Learning and Web Development</h3>
+      <h3 class="text-center mb-5 p2">(There are currently <span style="font-weight:bold">{{ blogposts.count }}</span> post{{ blogposts.count|pluralize }})</h3>
+    <hr class="blog">
+    {% for post in blogposts %}
+    <div class="row justify-content-center my-3">
+    <div class="col-md-10">
+      <a href="{% url 'blog:detail' post.id %}"><h1 class="p4">{{ post.title }}</h1></a>
+      <h3 class="p5">{{ post.date|date:'M d Y' }}</h3>
+      <a href="{% url 'blog:detail' post.id %}"><img class="postpic" src="{{ post.image.url }}"></a>
+      <a href="{% url 'blog:detail' post.id %}"><p class="p6">{{ post.description|striptags|truncatechars:500 }}</p></a>
+    </div>
+    </div>
+    {% endfor %}
+  </body>
+</html>
+
+{% endblock %}

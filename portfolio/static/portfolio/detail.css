@@ -23,12 +23,13 @@ body {
   object-position: top;
 }
 
-.p1 {
-  font-size: 500%;
+.p4 {
+  font-size: 200%;
   font-weight: 700;
-  padding-top: 1.5%;
-  padding-bottom: 1.5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
   color: #3f80bf;
+  text-decoration: none;
 }
 
 .p2 {
@@ -43,4 +44,10 @@ body {
   font-size: 130%;
   font-family: helvetica;
   font-weight: 300;
+}
+
+.link {
+  padding-bottom: 5%;
+  color: #3f80bf;
+  text-decoration:none;
 }

@@ -10,7 +10,7 @@ body {
 }
 
 #aboutme {
-  padding-top: 3%;
+  padding-top: 1%;
   padding-left:4%;
   padding-right:4%
 }
@@ -37,6 +37,7 @@ padding-bottom: 1%
 
 hr.hr1 {
   border: .5px solid #bdbdbd;
+  margin-bottom: 3%
 }
 
 #port {
@@ -46,7 +47,7 @@ hr.hr1 {
 
 .h-i{
   font-size: 40px;
-  font-weight: 900;
+  font-weight: 700;
   text-align: left;
   color: #3f80bf;
 }

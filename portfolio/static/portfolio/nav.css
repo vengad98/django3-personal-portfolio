@@ -20,7 +20,14 @@ button {
 }
 
 .firsthead {
-  padding-top: 2%;
+  padding-top: 1%;
+}
+
+.imglogo {
+  width: 6.5%;
+  height: 6%;
+  margin-right: 1%;
+  margin-bottom: 0.2%
 }
 
 .h11 {

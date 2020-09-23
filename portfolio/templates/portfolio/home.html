@@ -2,7 +2,7 @@
 
 {% load static %}
 
-{% block ebolus %}
+{% block content %}
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -12,6 +12,7 @@
     <title>Vengad</title>
   </head>
   <body>
+
     <header class="row justify-content-center mb-3">
       <hgroup class="col-md-9 text-center hg">
         <h4>Hi, my name is</h4>
@@ -26,7 +27,7 @@
             <img class="me img-fluid" src="{% static 'portfolio/me.png' %}" class="img-fluid">
           </section>
           <section class="col-sm justify-content-center align-self-center">
-            <p class="p1">I am a first year Computer Science student at Queen Mary University of London.
+            <p class="p1">I am a second year Computer Science student at Queen Mary University of London.
             Below is a collection of my recent projects with the respective development languages and frameworks used listed
             beneath them.</p>
             <ul class="list-group list-group-flush">
@@ -58,8 +59,11 @@
 
           </section>
           {% endfor %}
-      </div>
     </section>
+    </div>
+
+    <script type="text/javascript" src="particles.js"></script>
+    <script type="text/javascript" src="app.js"></script>
   </body>
 </html>
 
